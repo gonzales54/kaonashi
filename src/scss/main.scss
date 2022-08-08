@@ -1,13 +1,127 @@
+:root{
+    --corner-color: rgb(166, 86, 197)
+}
+
 body{
     background-color: black;
 }
 
 #head{
-    #top-corner-left{}
-    #top-corner-right{}
-    #left-eye{}
-    #right-eye{}
-    #bottom-corner-left{}
-    #bottom-corner-right{}
-    #mouth{}
+    width: 200px;
+    height: 300px;
+    margin: 30% auto;
+    position: relative;
+    border-radius: 100px 100px 90px 90px / 100px 100px 140px 140px;
+    background-color: rgb(255, 255, 255);
+
+    #top-corner-left{
+        display: inline-block;
+        position: absolute;
+        top: 15%;
+        left: 17.5%;
+        border-top: 40px solid transparent;
+        border-right: 20px solid var(--corner-color);
+        border-bottom: 10px solid transparent;
+    }
+
+    #top-corner-right{
+        display: inline-block;
+        position: absolute;
+        top: 15%;
+        right: 17.5%;
+        border-top: 40px solid transparent;
+        border-left: 20px solid var(--corner-color);
+        border-bottom: 10px solid transparent;
+    }
+
+    #left-eye{
+        width: 40px;
+        height: 25px;
+        background-color: rgb(32, 30, 30);
+        position: absolute;
+        top: 40%;
+        left: 15%;
+        border-radius: 16px 16px 16px 16px / 14px 14px 14px 14px ;
+    }
+    #left-eye::after{
+        width: 25px;
+        height: 20px;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 16%;
+        border-radius: 0 0 0 29px;
+        border-width: 0 0 3px 3px;
+        border-style: solid;
+        border-color: rgb(32, 30, 30);
+        transform: rotate(-40deg);
+    }
+    #right-eye{
+        width: 40px;
+        height: 25px;
+        background-color: rgb(32, 30, 30);
+        position: absolute;
+        top: 40%;
+        right: 15%;
+        border-radius: 16px 16px 16px 16px / 14px 14px 14px 14px ;
+    }
+    #right-eye::after{
+        width: 25px;
+        height: 20px;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 16%;
+        border-radius: 0 0 0 29px;
+        border-width: 0 0 3px 3px;
+        border-style: solid;
+        border-color: rgb(32, 30, 30);
+        transform: rotate(-40deg);
+    }
+
+    #bottom-corner-left{
+        display: inline-block;
+        position: absolute;
+        top: 57.5%;
+        left: -2%;
+        border-bottom: 80px solid transparent;
+        border-right: 25px solid var(--corner-color);
+        border-left: 40px solid transparent;
+    }
+
+    #bottom-corner-right{
+        display: inline-block;
+        position: absolute;
+        top: 57.5%;
+        right: -2%;
+        border-bottom: 80px solid transparent;
+        border-left: 25px solid var(--corner-color);
+        border-right: 40px solid transparent;
+    }
+
+    #mouth{
+        width: 40px;
+        height: 25px;
+        background-color: rgb(32, 30, 30);
+        position: absolute;
+        top: 40%;
+        left: 15%;
+        border-radius: 16px 16px 16px 16px / 14px 14px 14px 14px ;
+    }    
+    #mouth::after{
+        width: 25px;
+        height: 20px;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 16%;
+        border-radius: 0 0 0 29px;
+        border-width: 0 0 3px 3px;
+        border-style: solid;
+        border-color: rgb(32, 30, 30);
+        transform: rotate(-40deg);
+    }
 }
